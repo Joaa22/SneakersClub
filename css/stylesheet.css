@@ -28,6 +28,7 @@ header {
   position: fixed;
   width: 100%;
   padding-block: 10px;
+  z-index: 999;
 }
 
 /*body*/
@@ -60,6 +61,7 @@ a {
 
 .nombre-pyme:hover {
   color: #a807a8fd;
+  transition: 1s;
 }
 
 nav a {
@@ -69,6 +71,7 @@ nav a {
 
 nav a:hover {
   color: #a807a8fd;
+  transition: 1s;
 }
 
 .logo-img {
@@ -115,6 +118,32 @@ main {
   width: 400px;
 }
 
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 /*NUESTRAS MARCAS*/
 
 .nuestrasmarcas {
@@ -123,6 +152,37 @@ main {
   background-color: #323638;
   padding-top: 100px;
   font-size: 40px;
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*CARDS*/
@@ -163,10 +223,40 @@ main {
 
 .card__a a:hover {
   color: #a807a8fd;
+  transition: 1s;
 }
 
 .card__titulo {
   font-size: 20px;
+}
+
+.slide-fwd-center {
+  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+
+
+@-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
+  }
+}
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px);
+  }
 }
 
 /*FORMULARIO CONTACTO*/
@@ -597,4 +687,14 @@ footer {
     height: 300px;
     max-width: 100%;
   }
+}
+
+.body__talles {
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
 }
