@@ -350,7 +350,6 @@ footer {
 /*------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
-
   /*HEADER*/
 
   .logo img {
@@ -557,31 +556,41 @@ footer {
 
   /*NOSOTROS*/
 
+  .nosotros__titulo {
+    font-size: 2rem;
+  }
+
+  .nosotros__subtitulo {
+    font-size: 1.5rem;
+  }
+
   .nosotros__texto {
-    padding-top: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 40px;
+    padding: 1rem;
+    text-align: center;
   }
 
   .nosotros__subtitulo {
     padding-bottom: 10px;
   }
 
+  .nosotros__texto {
+    font-size: 1.5rem;
+  }
+
   /*TALLES*/
 
   .grid__padre {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding-bottom: 50px;
   }
 
-  .grid__tipos {
-    font-size: 50px;
+  .talles__titulo {
+    font-size: 3rem;
   }
 
   .grid__hijo {
-    font-size: 40px;
+    font-size: 2rem;
   }
 
   .card__img {
