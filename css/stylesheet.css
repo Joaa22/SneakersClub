@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #323638;
+}
+
+/*-------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  background-color: #212529;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding-block: 10px;
+}
+
+/*body*/
+.body-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+/*---------------------------------*/
+
+a {
+  text-decoration: none;
+  color: #e9ecef;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.nombre-pyme {
+  font-size: 22px;
+}
+
+.nombre-pyme:hover {
+  color: #a807a8fd;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: #a807a8fd;
+}
+
+.logo-img {
+  padding-left: 5px;
+}
+
+.active {
+  color: #a807a8fd;
+}
+
+/*MAIN*/
+
+main {
+  padding-top: 70px;
+}
+.main-nosotros {
+  height: 100%;
+}
+/*HERO*/
+
+.inicio-padre {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/background-marmol.jpg);
+  background-size: cover;
+}
+
+.inicio-hijo {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 26px;
+  flex: 1;
+}
+
+.inicio-hijo-foto {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.foto {
+  width: 400px;
+}
+
+/*NUESTRAS MARCAS*/
+
+.nuestrasmarcas {
+  color: white;
+  text-align: center;
+  background-color: #323638;
+  padding-top: 100px;
+  font-size: 40px;
+}
+
+/*CARDS*/
+
+.card {
+  padding: 100px;
+  display: flex;
+  gap: 30px;
+}
+
+.card__a {
+  background-color: #272727;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.card__img {
+  height: 300px;
+  max-width: 100%;
+}
+
+.card__info {
+  padding: 0 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.card__info a {
+  color: whitesmoke;
+}
+
+.card__a a:hover {
+  color: #a807a8fd;
+}
+
+.card__titulo {
+  font-size: 20px;
+}
+
+/*FORMULARIO CONTACTO*/
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.formulario__contacto {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario__div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.div__text {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/*TALLES*/
+
+.talles__titulo {
+  color: white;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 70px;
+  justify-content: center;
+}
+
+.grid__padre {
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 100px;
+}
+
+.grid__hijo {
+  background-color: #212529;
+  border: 2px solid #323638;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.grid__tipos {
+  font-size: 60px;
+  color: #a807a8fd;
+}
+
+.grid__hijo:hover {
+  color: #a807a8fd;
+}
+
+/*NOSOTROS*/
+
+.nosotros {
+  padding-top: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nosotros__titulo {
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+
+.nosotros__subtitulo {
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+.nosotros__texto {
+  padding-top: 50px;
+  font-size: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/*PAGINA - ANTI SOCIAL SOCIAL CLUB*/
+
+.titulo {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo__texto {
+  color: white;
+  font-size: 40px;
+}
+
+/*PAGINA JORDAN con GRIDS*/
+
+.grid__padre__jordan {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/*FOOTER*/
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #181a1b;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.extra {
+  width: 100%;
+}
+
+.extra1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__redes {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+}
+.footer li {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__img {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.footer__text {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  /*HEADER*/
+
+  .logo img {
+    display: none;
+  }
+
+  .nombre-pyme {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: static;
+    padding-block: 0px;
+    font-size: 3rem;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  main {
+    padding-top: 0px;
+  }
+
+  /*HERO*/
+
+  .inicio-padre {
+    flex-direction: column;
+  }
+
+  .inicio-hijo {
+    font-size: 0rem;
+  }
+
+  .foto {
+    width: 500px;
+  }
+
+  /*NUESTRAS MARCAS*/
+
+  .card {
+    flex-direction: column;
+  }
+
+  .nuestrasmarcas {
+    font-size: 70px;
+  }
+
+  .card {
+    padding: 100px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .card__img {
+    height: 500px;
+    max-width: 100%;
+  }
+
+  .card__titulo {
+    font-size: 35px;
+  }
+
+  .card__info a {
+    font-size: 30px;
+  }
+
+  /*TALLES*/
+
+  .grid__padre {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 50px;
+  }
+
+  .grid__hijo {
+    font-size: 70px;
+  }
+
+  /*NOSOTROS*/
+
+  .nosotros__texto {
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .nosotros__subtitulo {
+    padding-bottom: 10px;
+  }
+
+  .card__info p {
+    font-size: 30px;
+  }
+}
+/*----------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+  /*HEADER*/
+
+  .logo img {
+    display: none;
+  }
+
+  .nombre-pyme {
+    display: none;
+  }
+
+  header {
+    position: static;
+    padding-block: 0px;
+    font-size: 3rem;
+  }
+
+  .header__jordan {
+    justify-content: center;
+  }
+
+  .header__talles {
+    justify-content: center;
+  }
+
+  .header__nosotros {
+    justify-content: center;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  nav a {
+    padding-right: 0px;
+  }
+
+  main {
+    padding-top: 0px;
+  }
+
+  /*HERO*/
+
+  .inicio-padre {
+    flex-direction: column;
+  }
+
+  .inicio-hijo {
+    font-size: 0rem;
+  }
+
+  .foto {
+    width: 450px;
+  }
+
+  /*NUESTRAS MARCAS*/
+
+  .card {
+    flex-direction: column;
+  }
+
+  .nuestrasmarcas {
+    font-size: 40px;
+  }
+
+  .card {
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
+  .card__titulo {
+    font-size: 1.5rem;
+  }
+
+  .card__info a {
+    font-size: 1.5rem;
+  }
+
+  /*PAG JORDAN*/
+
+  .grid__padre__jordan {
+    display: flex;
+  }
+
+  /*NOSOTROS*/
+
+  .nosotros__texto {
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+  }
+
+  .nosotros__subtitulo {
+    padding-bottom: 10px;
+  }
+
+  /*TALLES*/
+
+  .grid__padre {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-bottom: 50px;
+  }
+
+  .grid__tipos {
+    font-size: 50px;
+  }
+
+  .grid__hijo {
+    font-size: 40px;
+  }
+
+  .card__img {
+    height: 300px;
+    max-width: 100%;
+  }
+}
