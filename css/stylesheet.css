@@ -473,7 +473,7 @@ footer {
   header {
     position: static;
     padding-block: 0px;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .header__jordan {
@@ -520,7 +520,7 @@ footer {
   }
 
   .foto {
-    width: 450px;
+    width: 20rem;
   }
 
   /*NUESTRAS MARCAS*/
@@ -530,7 +530,7 @@ footer {
   }
 
   .nuestrasmarcas {
-    font-size: 40px;
+    font-size: 2rem;
   }
 
   .card {
