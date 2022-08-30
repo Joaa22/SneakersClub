@@ -25,7 +25,15 @@ html {
   transition: 1s;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
 /*---------------------------------*/
+
 /*body*/
 .body-nosotros {
   display: flex;
@@ -33,6 +41,11 @@ html {
   justify-content: space-between;
   height: 100vh;
 }
+
+body {
+  padding-top: 5rem;
+}
+
 /*---------------------------------*/
 
 /*MAIN*/
@@ -95,6 +108,24 @@ html {
   }
 }
 
+/*HERO MARCAS*/
+
+.hero__marcas {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/BannerSHOP-scaled.jpg);
+  background-size: cover;
+}
+
+.hero__marcashijo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 5rem;
+  flex: 1;
+}
+
 /*NUESTRAS MARCAS*/
 
 .nuestrasmarcas {
@@ -138,7 +169,10 @@ html {
 /*CARDS*/
 
 .card__ {
-  padding: 100px;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
   display: flex;
   gap: 2rem;
 }
@@ -165,6 +199,7 @@ html {
   align-items: center;
   flex-direction: column;
   color: white;
+  text-align: center;
 }
 
 .card__info a {
@@ -337,10 +372,11 @@ textarea {
   padding-right: 150px;
 }
 
-/*PAGINA - ANTI SOCIAL SOCIAL CLUB*/
+/*PAGINA*/
 
 .titulo {
-  padding-top: 30px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,7 +384,7 @@ textarea {
 
 .titulo__texto {
   color: white;
-  font-size: 40px;
+  text-align: center;
 }
 
 /*PAGINA JORDAN con GRIDS*/
@@ -437,13 +473,33 @@ h2 {
   font-size: 5rem;
 }
 
+.titulo__display {
+  display: none;
+}
+
+.medios__pago {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.mediospago__titulo {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.medios__pagoimg {
+  padding-bottom: 2rem;
+}
+
 /*---------------------------------------*/
 
 @media screen and (max-width: 1500px) {
   /*CARDS*/
 
   .card__ {
-    padding: 100px;
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -480,6 +536,17 @@ h2 {
   .hero__h {
     display: none;
   }
+
+  header {
+    position: static;
+    width: none;
+    top: none;
+    z-index: none;
+  }
+
+  body {
+    padding-top: 0rem;
+  }
 }
 
 /*-----------------------------------------*/
@@ -488,7 +555,6 @@ h2 {
   /*CARDS*/
 
   .card__ {
-    padding: 100px;
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -497,6 +563,15 @@ h2 {
   .card__img {
     height: 400px;
     max-width: 100%;
+  }
+
+  .hero__display {
+    display: none;
+  }
+
+  .titulo__display {
+    display: flex;
+    padding-top: 5rem;
   }
 }
 
@@ -559,9 +634,23 @@ h2 {
   .card__info p {
     font-size: 30px;
   }
+
+  /*medios de pago*/
+
+  .medios__pagoimg {
+    width: 600px;
+  }
 }
 
 /*----------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  /*medios de pago*/
+
+  .medios__pagoimg {
+    width: 500px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   header {
@@ -675,6 +764,12 @@ h2 {
   h2 {
     font-size: 3rem;
   }
+
+  /*medios de pago*/
+
+  .medios__pagoimg {
+    width: 380px;
+  }
 }
 
 /*galaxy S8 css viewport size 360x740*/
@@ -703,5 +798,11 @@ h2 {
 
   .card__info a {
     font-size: 1rem;
+  }
+
+  /*medios de pago*/
+
+  .medios__pagoimg {
+    width: 330px;
   }
 }
