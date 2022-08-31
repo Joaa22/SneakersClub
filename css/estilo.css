@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+*::-moz-selection {
+  background-color: black;
+  color: rgba(168, 7, 168, 0.9921568627);
+}
+*::selection {
+  background-color: black;
+  color: rgba(168, 7, 168, 0.9921568627);
+}
+
+/*body*/
+body {
+  background-color: #323638;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5rem;
+}
+@media screen and (max-width: 991px) {
+  body body {
+    padding-top: 0rem;
+  }
+}
+
+.body-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+header .header__a:hover {
+  color: rgba(168, 7, 168, 0.9921568627);
+  transition: 1s;
+}
+
+/*HERO*/
+.inicio-padre {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/background-marmol.jpg);
+  background-size: cover;
+}
+.inicio-padre .inicio-hijo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 26px;
+  flex: 1;
+}
+.inicio-padre .inicio-hijo-foto {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.inicio-padre .inicio-hijo-foto .foto {
+  width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  /*HERO*/
+  .inicio-padre {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .inicio-padre {
+    flex-direction: column;
+  }
+  .inicio-padre .inicio-hijo {
+    font-size: 0rem;
+  }
+  .inicio-padre .inicio-hijo-foto .foto {
+    width: 15rem;
+  }
+}
+/*titulo nuestras marcas*/
+.nuestrasmarcas {
+  color: white;
+  text-align: center;
+  background-color: #323638;
+  font-size: 40px;
+}
+
+/*formulario*/
+.formulario__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-direction: column;
+}
+.formulario__ .form__ {
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+.formulario__ .form__ .formulario__contacto {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.formulario__ .form__ .div__text {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.formulario__ .form__ input,
+.formulario__ .form__ textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+.formulario__ .form__ textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+.formulario__ .form__ #boton {
+  background-color: #31384a;
+  border: none;
+  color: white;
+  font-weight: 500;
+  padding: 20px;
+}
+.formulario__ .form__ #boton:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 460px) {
+  .formulario__ .form__ {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .formulario__ .form__ {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .formulario__ .form__ {
+    width: 200px;
+  }
+}
+
+/*medios de pago*/
+.medios__pago {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.medios__pago .mediospago__titulo {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+.medios__pago .medios__pagoimg {
+  padding-bottom: 2rem;
+}
+
+.main-nosotros {
+  height: 100%;
+}
+
+.nosotros {
+  padding-top: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.nosotros .nosotros__titulo {
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+.nosotros .nosotros__subtitulo {
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.nosotros .nosotros__texto {
+  padding-top: 50px;
+  font-size: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+@media screen and (max-width: 768px) {
+  .nosotros .nosotros__texto {
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+  .nosotros .nosotros__subtitulo {
+    padding-bottom: 10px;
+  }
+  .nosotros .card__info p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nosotros .nosotros__titulo {
+    font-size: 2rem;
+  }
+  .nosotros .nosotros__subtitulo {
+    font-size: 1.5rem;
+  }
+  .nosotros .nosotros__texto {
+    padding: 1rem;
+    text-align: center;
+  }
+  .nosotros .nosotros__subtitulo {
+    padding-bottom: 10px;
+  }
+  .nosotros .nosotros__texto {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nosotros .nosotros__subtitulo {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+main .talles__titulo123 {
+  color: white;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+main .grid__padre {
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 100px;
+}
+main .grid__padre .grid__hijo {
+  background-color: #212529;
+  border: 2px solid #323638;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+main .grid__padre .grid__hijo:hover {
+  cursor: pointer;
+  color: rgba(168, 7, 168, 0.9921568627);
+}
+main .grid__padre .grid__tipos {
+  font-size: 60px;
+  color: rgba(168, 7, 168, 0.9921568627);
+}
+@media screen and (max-width: 1170px) {
+  main .grid__padre {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: center;
+  }
+  main .grid__padre .grid__hijo {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .grid__padre {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+  main .grid__padre .grid__hijo {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .talles__titulo {
+    font-size: 3rem;
+  }
+  main .grid__padre {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 50px;
+  }
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #181a1b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2;
+}
+footer .footer__redes {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+}
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+footer .footer__text {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.extra {
+  width: 100%;
+}
+
+.extra1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.hero__marcas {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/BannerSHOP-scaled.jpg);
+  background-size: cover;
+}
+.hero__marcas .hero__marcashijo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 5rem;
+  flex: 1;
+}
+
+.titulo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulo .titulo__texto {
+  color: white;
+  text-align: center;
+}
+
+.card__ {
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.card__ .card__a {
+  background-color: #272727;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.card__ .card__a .card__img {
+  height: 300px;
+  max-width: 100%;
+}
+.card__ .card__a .card__info {
+  padding: 0 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+.card__ .card__a .card__info .card__titulo {
+  font-size: 20px;
+}
+.card__ .card__a .card__info a {
+  color: white;
+}
+
+.grid__padre__jordan {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}/*# sourceMappingURL=estilo.css.map */

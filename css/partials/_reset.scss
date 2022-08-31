@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontmontserrat;
+
+  &::selection {
+    background-color: black;
+    color: $colorViolet;
+  }
+}
+
+/*body*/
+
+body {
+  background-color: $colorBody;
+  margin: 0;
+  font-family: $fontmontserrat;
+  padding-top: 5rem;
+
+  @media screen and (max-width: 991px) {
+    body {
+      padding-top: 0rem;
+    }
+  }
+}
+
+.body-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}

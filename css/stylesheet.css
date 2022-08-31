@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"); */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
-body {
-  font-family: "Montserrat", sans-serif;
+/* body {
+    font-family: "Montserrat", sans-serif;  
   margin: 0;
-  background-color: #323638;
-}
+   background-color: #323638; 
+} */
 
 /*-------------------------------------*/
 
@@ -18,9 +18,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.marcas {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 /*HEADER*/
 
-.header__a:hover {
+/* .header__a:hover {
   color: #a807a8fd;
   transition: 1s;
 }
@@ -30,11 +35,11 @@ header {
   width: 100%;
   top: 0;
   z-index: 999;
-}
+} */
 
 /*---------------------------------*/
 
-/*body*/
+/* body
 .body-nosotros {
   display: flex;
   flex-direction: column;
@@ -44,19 +49,19 @@ header {
 
 body {
   padding-top: 5rem;
-}
+} */
 
 /*---------------------------------*/
 
 /*MAIN*/
 
-.main-nosotros {
+/* .main-nosotros {
   height: 100%;
-}
+} */
 
 /*HERO*/
 
-.inicio-padre {
+/* .inicio-padre {
   padding: 100px;
   display: flex;
   align-items: center;
@@ -80,7 +85,7 @@ body {
 
 .foto {
   width: 400px;
-}
+} */
 
 .rotate-center {
   -webkit-animation: rotate-center 0.6s ease-in-out both;
@@ -108,9 +113,9 @@ body {
   }
 }
 
-/*HERO MARCAS*/
+/*HERO  pag MARCAS*/
 
-.hero__marcas {
+/* .hero__marcas {
   padding: 100px;
   display: flex;
   align-items: center;
@@ -124,16 +129,16 @@ body {
   color: white;
   padding: 5rem;
   flex: 1;
-}
+} */
 
 /*NUESTRAS MARCAS*/
 
-.nuestrasmarcas {
+/* .nuestrasmarcas {
   color: white;
   text-align: center;
   background-color: #323638;
   font-size: 40px;
-}
+} */
 
 .tracking-in-expand {
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
@@ -168,7 +173,7 @@ body {
 
 /*CARDS*/
 
-.card__ {
+/* .card__ {
   padding-right: 4rem;
   padding-left: 4rem;
   padding-bottom: 2rem;
@@ -208,7 +213,7 @@ body {
 
 .card__titulo {
   font-size: 20px;
-}
+} */
 
 .slide-fwd-center {
   -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -239,7 +244,7 @@ body {
 
 /*FORMULARIO CONTACTO*/
 
-.form__ {
+/* .form__ {
   width: 450px;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
@@ -276,8 +281,7 @@ body {
   justify-content: center;
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
@@ -301,19 +305,19 @@ textarea {
 
 #boton:hover {
   cursor: pointer;
-}
+} */
 
 /*--------------------------------------*/
 
 /*TALLES*/
 
-.talles__titulo123 {
+/* .talles__titulo123 {
   color: white;
   display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
   justify-content: center;
-}
+} 
 
 .grid__padre {
   display: grid;
@@ -342,11 +346,11 @@ textarea {
 .grid__hijo:hover {
   cursor: pointer;
   color: #a807a8fd;
-}
+}   */
 
 /*NOSOTROS*/
 
-.nosotros {
+/* .nosotros {
   padding-top: 50px;
   color: white;
   display: flex;
@@ -370,11 +374,11 @@ textarea {
   font-size: 20px;
   padding-left: 150px;
   padding-right: 150px;
-}
+} */
 
-/*PAGINA*/
+/*PAGINA marcas*/
 
-.titulo {
+/* .titulo {
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -385,18 +389,18 @@ textarea {
 .titulo__texto {
   color: white;
   text-align: center;
-}
+} */
 
-/*PAGINA JORDAN con GRIDS*/
+/*PAGINA JORDAN con GRIDS son todas las pag iguales*/
 
-.grid__padre__jordan {
+/* .grid__padre__jordan {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 
 /*FOOTER*/
 
-footer {
+/* footer {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #181a1b;
@@ -405,9 +409,9 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
-.extra {
+/* .extra {
   width: 100%;
 }
 
@@ -415,35 +419,36 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
+}  */
 
-.footer__redes {
+/* .footer__redes {
   font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 5px;
-}
+} */
 
-.footer ul {
+/* .footer ul {
   list-style-type: none;
   display: flex;
   padding: 0px;
-}
+} 
+
 .footer li {
   display: flex;
   flex-direction: column;
   padding-inline: 20px;
-}
+} */
 
-.footer__img {
+/* .footer__img {
   padding-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5px;
-}
+} */
 
-.footer p {
+/* .footer p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,11 +459,11 @@ footer {
 .footer__text {
   padding-top: 5px;
   padding-bottom: 5px;
-}
+} */
 
-footer {
+/* footer {
   transition: 0.2;
-}
+} */
 
 footer ul:hover a {
   filter: blur(2px);
@@ -467,6 +472,8 @@ footer ul:hover a {
 footer ul li a:hover {
   filter: none;
 }
+
+/*-----------------------*/
 
 .h2,
 h2 {
@@ -477,7 +484,7 @@ h2 {
   display: none;
 }
 
-.medios__pago {
+/* .medios__pago {
   display: flex;
   align-items: center;
   text-align: center;
@@ -492,7 +499,7 @@ h2 {
 
 .medios__pagoimg {
   padding-bottom: 2rem;
-}
+} */
 
 /*---------------------------------------*/
 
@@ -580,13 +587,13 @@ h2 {
 @media screen and (max-width: 768px) {
   /*HERO*/
 
-  .inicio-padre {
+  /* .inicio-padre {
     flex-direction: column;
   }
 
   .foto {
     width: 500px;
-  }
+  } */
 
   header {
     font-size: 1.5rem;
@@ -605,21 +612,26 @@ h2 {
     text-align: center;
   }
 
+  /*------------------------------------*/
+
   /*TALLES*/
 
-  .grid__padre {
+  /* .grid__padre {
     margin-left: 1rem;
     margin-right: 1rem;
     padding-bottom: 50px;
+    align-items: center;
   }
 
   .grid__hijo {
     font-size: 70px;
-  }
+  } */
+
+  /*------------------------------------*/
 
   /*NOSOTROS*/
 
-  .nosotros__texto {
+  /*  .nosotros__texto {
     padding-top: 10px;
     padding-left: 60px;
     padding-right: 60px;
@@ -633,7 +645,7 @@ h2 {
 
   .card__info p {
     font-size: 30px;
-  }
+  } */
 
   /*medios de pago*/
 
@@ -672,7 +684,7 @@ h2 {
 
   /*HERO*/
 
-  .inicio-padre {
+  /* .inicio-padre {
     flex-direction: column;
   }
 
@@ -682,7 +694,7 @@ h2 {
 
   .foto {
     width: 20rem;
-  }
+  } */
 
   /*NUESTRAS MARCAS*/
 
@@ -718,7 +730,7 @@ h2 {
 
   /*NOSOTROS*/
 
-  .nosotros__titulo {
+  /*  .nosotros__titulo {
     font-size: 2rem;
   }
 
@@ -737,11 +749,13 @@ h2 {
 
   .nosotros__texto {
     font-size: 1.5rem;
-  }
+  } */
+
+  /*------------------------------------*/
 
   /*TALLES*/
 
-  .grid__padre {
+  /* .grid__padre {
     margin-left: 5px;
     margin-right: 5px;
     padding-bottom: 50px;
@@ -749,11 +763,13 @@ h2 {
 
   .talles__titulo {
     font-size: 3rem;
-  }
+  } */
 
-  .grid__hijo {
+  /*----------------------------------*/
+
+  /* .grid__hijo {
     font-size: 2rem;
-  }
+  } */
 
   .card__img {
     height: 300px;
@@ -774,22 +790,29 @@ h2 {
 
 /*galaxy S8 css viewport size 360x740*/
 
-@media screen and (max-width: 460px) {
+/* @media screen and (max-width: 460px) {
   .form__ {
     width: 400px;
   }
-}
+} */
 
 @media screen and (max-width: 420px) {
-  .form__ {
+  /* .form__ {
     width: 320px;
-  }
+  } */
 
   .h2,
   h2 {
     font-size: 3rem;
   }
 }
+
+/* @media screen and (max-width: 400px) {
+  .nosotros__subtitulo {
+    align-items: center;
+    text-align: center;
+  }
+} */
 
 @media screen and (max-width: 360px) {
   .card__titulo {

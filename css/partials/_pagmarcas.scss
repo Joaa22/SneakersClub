@@ -1,0 +1,74 @@
+.hero__marcas {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/BannerSHOP-scaled.jpg);
+  background-size: cover;
+
+  .hero__marcashijo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5rem;
+    flex: 1;
+  }
+}
+
+.titulo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .titulo__texto {
+    color: white;
+    text-align: center;
+  }
+}
+
+.card__ {
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  .card__a {
+    background-color: $colorCard__a;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+
+    .card__img {
+      height: 300px;
+      max-width: 100%;
+    }
+
+    .card__info {
+      padding: 0 10px 10px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+
+      .card__titulo {
+        font-size: 20px;
+      }
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.grid__padre__jordan {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}

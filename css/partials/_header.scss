@@ -1,0 +1,14 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+
+  .header__a:hover {
+    color: $colorViolet;
+    transition: 1s;
+  }
+
+
+}
+

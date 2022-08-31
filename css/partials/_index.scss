@@ -1,0 +1,161 @@
+/*HERO*/
+
+.inicio-padre {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/background-marmol.jpg);
+  background-size: cover;
+
+  .inicio-hijo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+    flex: 1;
+  }
+
+  .inicio-hijo-foto {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+    .foto {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*HERO*/
+
+  .inicio-padre {
+    flex-direction: column;
+  }
+ 
+
+  
+}
+
+@media screen and (max-width: 480px) {
+    .inicio-padre {
+      flex-direction: column;
+
+      .inicio-hijo {
+        font-size: 0rem;
+      }
+    }
+
+     .inicio-padre .inicio-hijo-foto .foto {
+    width: 15rem;
+  }
+  }
+
+
+/*titulo nuestras marcas*/
+
+.nuestrasmarcas {
+  color: white;
+  text-align: center;
+  background-color: $colorBody;
+  font-size: 40px;
+}
+
+/*formulario*/
+
+.formulario__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $colorCard__a;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-direction: column;
+
+  .form__ {
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+
+    .formulario__contacto {
+      color: white;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .div__text {
+      color: white;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 7px;
+      box-sizing: border-box;
+      font-size: 17px;
+    }
+
+    textarea {
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%;
+    }
+
+    #boton {
+      background-color: $colorBoton;
+      border: none;
+      color: white;
+      font-weight: 500;
+      padding: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .form__ {
+      width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .form__ {
+      width: 320px;
+    }
+  }
+
+  @media screen and (max-width: 330px) {
+    .form__ {
+      width: 200px;
+    }
+  }
+
+}
+
+/*medios de pago*/
+
+.medios__pago {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  .mediospago__titulo {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: white;
+  }
+
+  .medios__pagoimg {
+    padding-bottom: 2rem;
+  }
+}
