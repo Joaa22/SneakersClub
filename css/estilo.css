@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+/*MAP aplico en talles*/
+/* .sss{
+  background-color: map-get($palette, colorBody);
+} */
+/*EXTEND aplicado en .div__text y en el newsletter*/
+/* @extend ; */
+/*MIXIN*/
+/*aplicado en _pagmarcas.scss card__info y en _index.scss newsletter*/
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +15,12 @@
 }
 *::-moz-selection {
   background-color: black;
+  /* color: $colorViolet; */
   color: rgba(168, 7, 168, 0.9921568627);
 }
 *::selection {
   background-color: black;
+  /* color: $colorViolet; */
   color: rgba(168, 7, 168, 0.9921568627);
 }
 
@@ -111,17 +121,18 @@ header .header__a:hover {
   box-sizing: border-box;
   border-radius: 7px;
 }
-.formulario__ .form__ .formulario__contacto {
+.formulario__ .form__ .formulario__contacto, .formulario__ .form__ .div__text {
   color: white;
   font-size: 30px;
   display: flex;
   justify-content: center;
 }
 .formulario__ .form__ .div__text {
-  color: white;
+  /*EXTEND*/
+  /* color: white; */
   font-size: 20px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .formulario__ .form__ input,
 .formulario__ .form__ textarea {
@@ -162,12 +173,102 @@ header .header__a:hover {
   }
 }
 
+/*NEWSLETTER*/
+.newsletter {
+  /*   display: flex;
+   */ /* align-items: center; */
+  /* text-align: center; */
+  background-color: #323638;
+  color: white;
+  padding: 5rem;
+  flex-direction: column;
+  /* justify-content: center; */
+  /*MIXIN*/
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter .newsletter__nombre, .newsletter .newsletter__subtitulo2, .newsletter .newsletter__subtitulo1 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.newsletter .newsletter__subtitulo1 {
+  /* display: flex;
+  text-align: center;
+  align-items: center; */
+  /*     padding: 0.5rem;
+   */
+  font-size: 2rem;
+}
+.newsletter .newsletter__subtitulo2 {
+  /* display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem; */
+}
+.newsletter .newsletter__email {
+  padding: 0.5rem;
+}
+.newsletter .newsletter__email .newsletter__emailinput {
+  width: 35rem;
+  height: 2rem;
+  border-color: rgba(168, 7, 168, 0.9921568627);
+}
+.newsletter .newsletter__email #boton {
+  background-color: #31384a;
+  border: none;
+  color: white;
+  font-weight: 400;
+  padding: 4px;
+}
+.newsletter .newsletter__email #boton:hover {
+  cursor: pointer;
+}
+.newsletter .newsletter__email {
+  display: flex;
+  flex-direction: row;
+}
+.newsletter .newsletter__emaildivboton {
+  padding-left: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .newsletter .newsletter__email .newsletter__emailinput {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .newsletter .newsletter__email .newsletter__emailinput {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .newsletter .newsletter__email .newsletter__emailinput {
+    width: 20rem;
+  }
+  .newsletter .newsletter__email .newsletter__emaildivboton {
+    padding-top: 1rem;
+    padding-left: 0rem;
+  }
+  .newsletter .newsletter__email {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 360px) {
+  .newsletter .newsletter__email .newsletter__emailinput {
+    width: 18rem;
+  }
+}
+
 /*medios de pago*/
 .medios__pago {
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
+  background-color: #272727;
 }
 .medios__pago .mediospago__titulo {
   padding-top: 2rem;
@@ -260,6 +361,9 @@ main .grid__padre {
   padding-bottom: 100px;
 }
 main .grid__padre .grid__hijo {
+  /* 
+        background-color: $colorGridhijo;
+        border: 2px solid $colorBody; */
   background-color: #212529;
   border: 2px solid #323638;
   border-radius: 5px;
@@ -274,6 +378,7 @@ main .grid__padre .grid__hijo:hover {
 }
 main .grid__padre .grid__tipos {
   font-size: 60px;
+  /* color: $colorViolet; */
   color: rgba(168, 7, 168, 0.9921568627);
 }
 @media screen and (max-width: 1170px) {
@@ -407,12 +512,18 @@ footer .footer__text {
 }
 .card__ .card__a .card__info {
   padding: 0 10px 10px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /*       display: flex;
+  */ /*       justify-content: center;
+*/ /*       align-items: center;
+*/
   flex-direction: column;
   color: white;
+  /* text-align: center; */
+  /*MIXIN*/
+  display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .card__ .card__a .card__info .card__titulo {
   font-size: 20px;

@@ -13,3 +13,46 @@ $colorBoton: #31384a;
 $colorGridhijo: #212529;
 
 $colorFooter: #181a1b;
+
+
+/*MAP aplico en talles*/
+
+$palette: (
+  
+  colorBody: #323638,
+
+  colorViolet: #a807a8fd,
+  
+  colorCard__a: #272727,
+  
+  colorBoton: #31384a,
+  
+  colorGridhijo: #212529,
+  
+  colorFooter: #181a1b
+
+);
+
+
+/* .sss{
+  background-color: map-get($palette, colorBody);
+} */
+
+
+
+/*EXTEND aplicado en .div__text y en el newsletter*/
+
+/* @extend ; */
+
+
+
+/*MIXIN*/
+
+/*aplicado en _pagmarcas.scss card__info y en _index.scss newsletter*/
+
+@mixin DflexCenter {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

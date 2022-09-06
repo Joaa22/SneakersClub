@@ -16,8 +16,14 @@ main {
     padding-bottom: 100px;
 
     .grid__hijo {
+
+/* 
       background-color: $colorGridhijo;
-      border: 2px solid $colorBody;
+      border: 2px solid $colorBody; */
+
+background-color: map-get($palette, colorGridhijo);
+border: 2px solid map-get($palette, colorBody);
+
       border-radius: 5px;
       display: flex;
       justify-content: center;
@@ -32,7 +38,8 @@ main {
 
     .grid__tipos {
       font-size: 60px;
-      color: $colorViolet;
+      /* color: $colorViolet; */
+      color: map-get($palette, colorViolet);
     }
   }
 

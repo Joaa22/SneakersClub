@@ -32,25 +32,21 @@
   .inicio-padre {
     flex-direction: column;
   }
- 
-
-  
 }
 
 @media screen and (max-width: 480px) {
-    .inicio-padre {
-      flex-direction: column;
+  .inicio-padre {
+    flex-direction: column;
 
-      .inicio-hijo {
-        font-size: 0rem;
-      }
+    .inicio-hijo {
+      font-size: 0rem;
     }
+  }
 
-     .inicio-padre .inicio-hijo-foto .foto {
+  .inicio-padre .inicio-hijo-foto .foto {
     width: 15rem;
   }
-  }
-
+}
 
 /*titulo nuestras marcas*/
 
@@ -87,10 +83,12 @@
     }
 
     .div__text {
-      color: white;
+      /*EXTEND*/
+      @extend .formulario__contacto;
+      /* color: white; */
       font-size: 20px;
-      display: flex;
-      justify-content: center;
+      /* display: flex;
+      justify-content: center; */
     }
 
     input,
@@ -138,7 +136,118 @@
       width: 200px;
     }
   }
+}
 
+/*NEWSLETTER*/
+
+.newsletter {
+/*   display: flex;
+ */  /* align-items: center; */
+  /* text-align: center; */
+  background-color: $colorBody;
+  color: white;
+  padding: 5rem;
+  flex-direction: column;
+  /* justify-content: center; */
+
+  /*MIXIN*/
+  @include DflexCenter; 
+
+  .newsletter__nombre {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .newsletter__subtitulo1 {
+    @extend .newsletter__nombre;
+    /* display: flex;
+    text-align: center;
+    align-items: center; */
+/*     padding: 0.5rem;
+ */    font-size: 2rem;
+  }
+
+  .newsletter__subtitulo2 {
+    @extend .newsletter__nombre;
+    /* display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem; */
+  }
+
+  .newsletter__email {
+    padding: 0.5rem;
+
+    .newsletter__emailinput {
+      width: 35rem;
+      height: 2rem;
+      border-color: $colorViolet;
+    }
+
+    #boton {
+      background-color: $colorBoton;
+      border: none;
+      color: white;
+      font-weight: 400;
+      padding: 4px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .newsletter__email {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .newsletter__emaildivboton {
+    padding-left: 1rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    .newsletter__email {
+      .newsletter__emailinput {
+        width: 25rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .newsletter__email {
+      .newsletter__emailinput {
+        width: 15rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .newsletter__email {
+      .newsletter__emailinput {
+        width: 20rem;
+      }
+
+      .newsletter__emaildivboton {
+        padding-top: 1rem;
+        padding-left: 0rem;
+      }
+    }
+
+    .newsletter__email {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .newsletter__email {
+      .newsletter__emailinput {
+        width: 18rem;
+      }
+    }
+  }
 }
 
 /*medios de pago*/
@@ -148,6 +257,7 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  background-color: $colorCard__a;
 
   .mediospago__titulo {
     padding-top: 2rem;
