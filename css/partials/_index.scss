@@ -85,10 +85,7 @@
     .div__text {
       /*EXTEND*/
       @extend .formulario__contacto;
-      /* color: white; */
       font-size: 20px;
-      /* display: flex;
-      justify-content: center; */
     }
 
     input,
@@ -141,17 +138,13 @@
 /*NEWSLETTER*/
 
 .newsletter {
-/*   display: flex;
- */  /* align-items: center; */
-  /* text-align: center; */
   background-color: $colorBody;
   color: white;
   padding: 5rem;
   flex-direction: column;
-  /* justify-content: center; */
 
   /*MIXIN*/
-  @include DflexCenter; 
+  @include DflexCenter;
 
   .newsletter__nombre {
     display: flex;
@@ -162,19 +155,11 @@
 
   .newsletter__subtitulo1 {
     @extend .newsletter__nombre;
-    /* display: flex;
-    text-align: center;
-    align-items: center; */
-/*     padding: 0.5rem;
- */    font-size: 2rem;
+    font-size: 2rem;
   }
 
   .newsletter__subtitulo2 {
     @extend .newsletter__nombre;
-    /* display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 0.5rem; */
   }
 
   .newsletter__email {
@@ -267,5 +252,67 @@
 
   .medios__pagoimg {
     padding-bottom: 2rem;
+
+    @media screen and (max-width: 400px) {
+      width: 340px;
+    }
+  }
+}
+
+/*UBICACION GOOGLE MAPS*/
+
+.googlemaps1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+
+  .googlemaps__titulo {
+    color: white;
+    padding-bottom: 1rem;
+  }
+
+  .googlemaps__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: map-get($palette, colorCard__a);
+    border-radius: 5px;
+
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .googlemaps__div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #272727;
+    border-radius: 5px;
+
+    @media screen and (min-width: 651px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 450px) {
+      display: none;
+    }
+  }
+
+  .googlemaps__div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #272727;
+    border-radius: 5px;
+
+    @media screen and (min-width: 451px) {
+      display: none;
+    }
   }
 }

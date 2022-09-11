@@ -1,0 +1,132 @@
+.airjordan13titulo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.carrusel__section {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30%;
+  padding-right: 30%;
+
+  .carrusel__contenedor {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+
+    #carouselExampleIndicators {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30rem;
+      width: 60rem;
+      padding: 5rem;
+    }
+
+    .airjordan__texto {
+      display: flex;
+      padding: 2rem;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+
+      .airjordan__precio {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      .airjordan__info {
+        font-size: 20px;
+      }
+
+      .airjordan__boton {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  .carousel-item {
+    width: 400px;
+    img {
+      border-radius: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .carrusel__section {
+      width: 360px;
+    }
+
+    .carrusel__contenedor {
+      flex-direction: column;
+      padding: 2rem;
+
+      width: 360px;
+      #carouselExampleIndicators {
+        height: 22rem;
+        width: 22rem;
+
+        .bg-dark {
+          --bs-bg-opacity: 1;
+          background-color: rgba(
+            var(--bs-white-rgb),
+            var(--bs-bg-opacity)
+          ) !important;
+        }
+      }
+
+      .carousel-control-prev {
+        padding: 0rem;
+      }
+
+      .carousel-control-next {
+        padding: 0rem;
+        width: 100px;
+      }
+
+      .carousel-inner {
+        width: auto;
+      }
+
+      .airjordan__precio {
+        padding-top: 1rem;
+      }
+
+      .carousel-item {
+        width: 190px;
+        .img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .airjordan__texto {
+    padding: 2rem;
+
+    .airjordan__precio {
+      font-size: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .airjordan__info {
+      font-size: 10px;
+    }
+  }
+}
+
+/*  .bg-dark {
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+      } */

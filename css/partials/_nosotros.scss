@@ -1,6 +1,6 @@
- .main-nosotros {
-   height: 100%;
- }
+.main-nosotros {
+  height: 100%;
+}
 
 .nosotros {
   padding-top: 50px;
@@ -27,51 +27,45 @@
     padding-right: 150px;
   }
 
-
-
   @media screen and (max-width: 768px) {
+    .nosotros__texto {
+      padding-top: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 40px;
+      font-size: 30px;
+    }
 
+    .nosotros__subtitulo {
+      padding-bottom: 10px;
+    }
 
- .nosotros__texto {
-  padding-top: 10px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 40px;
-  font-size: 30px;
-}
-
-.nosotros__subtitulo {
-  padding-bottom: 10px;
-}
-
-.card__info p {
-  font-size: 30px;
-}
+    .card__info p {
+      font-size: 30px;
+    }
   }
 
-
   @media screen and (max-width: 480px) {
+    .nosotros__titulo {
+      font-size: 2rem;
+    }
 
- .nosotros__titulo {
-  font-size: 2rem;
-}
+    .nosotros__subtitulo {
+      font-size: 1.5rem;
+    }
 
-.nosotros__subtitulo {
-  font-size: 1.5rem;
-}
+    .nosotros__texto {
+      padding: 1rem;
+      text-align: center;
+    }
 
-.nosotros__texto {
-  padding: 1rem;
-  text-align: center;
-}
+    .nosotros__subtitulo {
+      padding-bottom: 10px;
+    }
 
-.nosotros__subtitulo {
-  padding-bottom: 10px;
-}
-
-.nosotros__texto {
-  font-size: 1.5rem;
-}
+    .nosotros__texto {
+      font-size: 1.5rem;
+    }
   }
 
   @media screen and (max-width: 400px) {
@@ -80,6 +74,4 @@
       text-align: center;
     }
   }
-
-
 }

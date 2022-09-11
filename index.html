@@ -16,7 +16,11 @@
       name="keywords"
       content="sneakersclub sneakers SNEAKERS zapatillas jordan nike antisocialsocialclub hype HYPE"
     />
-    <link rel="shortcut icon" href="images/icon-sneakersclub.png" />
+    <link
+      rel="shortcut icon"
+      href="images/icon-sneakersclub.png"
+      title="logo sneakers club"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -43,6 +47,7 @@
               width="60"
               height="60"
               class="d-inline-block align-text-center"
+              title="logo sneakers club"
             />
             SNEAKERSCLUB
           </a>
@@ -103,7 +108,12 @@
           </h1>
         </div>
         <div class="inicio-hijo-foto rotate-center">
-          <img src="images/icon-sneakersclub.png" alt="logo" class="foto" />
+          <img
+            src="images/icon-sneakersclub.png"
+            alt="logo"
+            class="foto"
+            title="logo sneakers club"
+          />
         </div>
         <div class="inicio-hijo">
           <h2 class="fw-bold fs-2 hero__h">SNEAKERS & STREETWEAR</h2>
@@ -123,11 +133,12 @@
       <section class="container">
         <div class="row mt-5 pb-5">
           <div class="col-sm-12 col-lg pb-5">
-            <div class="card h-100 text-bg-dark text-center">
+            <div class="card h-100 text-bg-dark text-center card__efectohover">
               <img
                 src="images/supreme.jpg"
                 class="card-img-top"
                 alt="supreme"
+                title="supreme"
               />
               <div
                 class="card-body d-flex justify-content-center align-items-center flex-column"
@@ -142,8 +153,13 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg pb-5">
-            <div class="card h-100 text-bg-dark text-center">
-              <img src="images/nike.webp" class="card-img-top" alt="nike" />
+            <div class="card h-100 text-bg-dark text-center card__efectohover">
+              <img
+                src="images/nike.webp"
+                class="card-img-top"
+                alt="nike"
+                title="nike"
+              />
               <div
                 class="card-body d-flex justify-content-center align-items-center flex-column"
               >
@@ -155,11 +171,12 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg pb-5">
-            <div class="card h-100 text-bg-dark text-center">
+            <div class="card h-100 text-bg-dark text-center card__efectohover">
               <img
                 src="images/essentials2.jpg"
                 class="card-img-top"
                 alt="essentials"
+                title="essentials"
               />
               <div
                 class="card-body d-flex justify-content-center align-items-center flex-column"
@@ -174,11 +191,12 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg pb-5">
-            <div class="card h-100 text-bg-dark text-center">
+            <div class="card h-100 text-bg-dark text-center card__efectohover">
               <img
                 src="images/anti-social-social-club.jpg"
                 class="card-img-top"
                 alt="anti social social club"
+                title="anti social social club"
               />
               <div
                 class="card-body d-flex justify-content-center align-items-center flex-column"
@@ -193,11 +211,12 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg pb-5">
-            <div class="card h-100 text-bg-dark text-center">
+            <div class="card h-100 text-bg-dark text-center card__efectohover">
               <img
                 src="images/air-jordan2.jpg"
                 class="card-img-top"
                 alt="jordan"
+                title="jordan"
               />
               <div
                 class="card-body d-flex justify-content-center align-items-center flex-column"
@@ -224,16 +243,22 @@
         >
           <h3 class="formulario__contacto">Contacto</h3>
           <label for="nombre" class="div__text p-2">Nombre:</label>
-          <input type="text" name="nombre" id="nombre" />
+          <input type="text" name="nombre" id="nombre" required />
           <br />
           <label for="email" class="div__text p-2">Email:</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
           <br />
           <label for="telefono" class="div__text p-2">Telefono:</label>
-          <input type="text" name="telefono" id="telefono" />
+          <input type="number" name="telefono" id="telefono" required />
           <br />
           <label for="mensaje" class="div__text p-2">Mensaje:</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
           <br />
           <input type="submit" value="Enviar" id="boton" />
         </form>
@@ -262,6 +287,7 @@
             placeholder="Email"
             aria-label="Email"
             class="newsletter__emailinput"
+            required
           />
           <div class="newsletter__emaildivboton">
             <input
@@ -284,28 +310,51 @@
           src="images\Visa-Mastercard-American-Express-Naranja-Tarjeta-Shopping-Nativa-Cencosud-Cabal-Argencard-Diners-Cordobesa-CMR-Cordial.png"
           class="medios__pagoimg"
           alt="medios de pago"
+          title="medios de pago"
         />
       </div>
     </section>
+
+
+<section class="googlemaps1">
+
+<div class="googlemaps__titulo">
+  <h6 class="h1"> ¿Donde estamos?</h6>
+</div>
+
+<div class="googlemaps__div"> 
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.730513589166!2d-58.456893663579606!3d-34.57339276377896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1662736000464!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="googlemaps__div1">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.730513589166!2d-58.456893663579606!3d-34.57339276377896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1662736000464!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="googlemaps__div2">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.730513589166!2d-58.456893663579606!3d-34.57339276377896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1662736000464!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
 
     <!--FOOTER-->
 
     <footer class="footer">
       <div class="footer__redes"><p>NUESTRAS REDES:</p></div>
       <ul class="footer__ul">
-        <li class="footer__ig">
+        <li class="footer__ig footer__redes__hover">
           <a href="https://www.instagram.com/sneakersclub0" target="_blank">
             <span
               class="bi bi-instagram"
               style="color: white; font-size: 3rem"
+              title="instagram"
             ></span>
           </a>
         </li>
-        <li class="footer__wpp">
+        <li class="footer__wpp footer__redes__hover">
           <a href="https://www.whatsapp.com/" target="_blank">
             <span
-              class="bi bi-whatsapp"
+              class="bi bi-whatsapp footer__redes__hover"
               style="color: white; font-size: 3rem"
+              title="whatsapp"
             ></span>
           </a>
         </li>

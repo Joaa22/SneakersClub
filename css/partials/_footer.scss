@@ -53,3 +53,11 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.footer__redes__hover {
+  transition: all 400ms ease;
+}
+
+.footer__redes__hover:hover {
+  transform: translateY(-3%);
+}
