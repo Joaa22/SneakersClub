@@ -453,7 +453,6 @@ main .grid__padre .grid__tipos {
 
 footer {
   padding-top: 20px;
-  padding-bottom: 20px;
   background-color: #181a1b;
   color: white;
   display: flex;
@@ -485,10 +484,37 @@ footer p {
   align-items: center;
   padding-top: 5px;
   padding-bottom: 10px;
+  text-align: center;
 }
 footer .footer__text {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+footer .footer__links {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+}
+footer .footer__links a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer__links :hover a {
+  filter: none;
+}
+@media screen and (max-width: 420px) {
+  footer .f-menu__index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .f-menu__index li {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .extra {
@@ -584,6 +610,7 @@ footer .footer__text {
   color: white;
   padding-top: 5rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .carrusel__section {

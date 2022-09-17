@@ -1,6 +1,5 @@
 footer {
   padding-top: 20px;
-  padding-bottom: 20px;
   background-color: $colorFooter;
   color: white;
   display: flex;
@@ -34,6 +33,7 @@ footer {
     align-items: center;
     padding-top: 5px;
     padding-bottom: 10px;
+    text-align: center;
   }
 
   .footer__text {
@@ -42,6 +42,37 @@ footer {
   }
 
   transition: 0.2;
+
+  .footer__links {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    :hover a {
+      filter: none;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .f-menu__index{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      li {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+  }
 }
 
 .extra {
